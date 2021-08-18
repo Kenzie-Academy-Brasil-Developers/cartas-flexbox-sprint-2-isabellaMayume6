@@ -4,6 +4,9 @@ html {
   color: #2F3442;
   height: 100%;
   background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
 }
 body{
@@ -88,21 +91,10 @@ margin-bottom: 14px;
     flex-basis: 0;
 
   }
-  @media(max-width 768px){
-    .card{
-
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      max-width: 320px;
-    }
-  }
-  @media (min-width 769px){
-    .card{
-      display: flex;
-      flex-direction: row;
-      max-width: 710px;
-      flex-wrap: wrap;
+  @media(max-width: 768px){
+    .cardGroup{
+     display: inline-block;
+     width: 50%;
 
     }
   }
